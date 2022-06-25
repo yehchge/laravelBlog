@@ -17,9 +17,30 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+// old route
 // Route::get('/contactUs', 'ContactUsController@index');
 // Route::post('/submitContact', 'ContactUsController@store');
 
+// Route::get('/home', 'HomeController@index');
+
+// Auth::routes();
+
+// Route::group(['middleware' => 'auth'], function () {
+
+//     Route::resource('posts', 'PostsController');
+// });
+
+
+
+
+// New Route
 Route::get('/contactUs', [ContactUsController::class, 'index']);
 Route::post('/submitContact', [ContactUsController::class, 'store']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
