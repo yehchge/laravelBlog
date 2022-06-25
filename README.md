@@ -7,6 +7,24 @@ This is My Laravel Study Code
 $ composer require laravel/ui --dev
 $ php artisan ui vue --auth
 $ npm install && npm run dev
+$ php artisan make:migration create_posts_table
+Update xxxx_xx_xx_xxxxxx_create_posts_table.php
+```
+Schema::create('posts', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('user_id')->unsigned();
+            $table->string('title');
+            $table->text('description');
+            $table->timestamps();
+        });
+```
+$ php artisan migrate
+$ php artisan make:seeder PostsTableSeeder
+$ php artisan make:seeder UsersTableSeeder
+$ php artisan db:seed
+$ php artisan key:generate
+$ php artisan make:controller PostsController --resource
+$ php artisan 
 $ composer install
 $ php artisan migrate
 $ php artisan serve

@@ -33,7 +33,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        &nbsp;
+                        <li><a href="{{ url('/posts/create') }}">New Post</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -74,6 +75,14 @@
                 </div>
             </div>
         </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    @include ('layouts.partials._notifications')
+                </div>
+            </div>
+        </div>
 
         <main class="py-4">
             @yield('content')

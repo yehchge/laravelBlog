@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\PostsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,6 +35,11 @@ Route::get('/', function () {
 
 
 // New Route
+Route::middleware(['auth'])->group(function () {
+	Route::resource('posts', PostsController::class);
+
+});
+
 Route::get('/contactUs', [ContactUsController::class, 'index']);
 Route::post('/submitContact', [ContactUsController::class, 'store']);
 
