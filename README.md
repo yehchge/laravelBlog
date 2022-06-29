@@ -29,13 +29,19 @@ $ composer install
 $ php artisan migrate
 $ php artisan serve
 
+$ php artisan make:migration create_members_table
+$ php artisan make:migration create_datas_table
+$ php artisan make:migration create_notes_table
+
+
+
 http://127.0.0.1:8000/
 http://127.0.0.1:8000/contactUs
 http://127.0.0.1:8000/dicts
 http://127.0.0.1:8000/posts
 http://127.0.0.1:8000/tasks
 http://127.0.0.1:8000/articles
-
+http://127.0.0.1:8000/blogs
 
 
 Ref:
@@ -104,3 +110,40 @@ edit.blade.php,
 index.blade.php,
 layout.blade.php,
 show.blade.php
+
+============================================
+
+Blogs:
+
+step 1:
+$ php artisan make:migration create_blogs_table --create=blogs
+
+step 2:
+update xxxx_xx_xx_xxxxxx_create_blogs_table.php
+
+step 3:
+$ php artisan migrate
+
+step 4:
+update routes/web.php
+
+step 5:
+$ php artisan make:controller BlogController --resource --model=Blog
+
+step 6:
+update app/Models/Blog.php
+
+step 7:
+update app/Http/Controllers/BlogController.php
+
+step 8:
+generate blade files. resources/views/blogs/...
+dashboard.blade.php,
+edit.blade.php,
+help.blade.php,
+index.blade.php,
+layout.blade.php,
+login.blade.php,
+note.blade.php,
+user.blade.php,
+user_edit.blade.php
