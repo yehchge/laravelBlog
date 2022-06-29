@@ -149,3 +149,38 @@ login.blade.php,
 note.blade.php,
 user.blade.php,
 user_edit.blade.php
+
+
+============================================
+
+Products:
+
+step 1:
+$ php artisan make:migration create_products_table --create=products
+
+step 2:
+update xxxx_xx_xx_xxxxxx_create_products_table.php
+
+step 3:
+$ php artisan migrate
+
+step 4:
+update routes/web.php
+
+step 5:
+$ php artisan make:controller ProductController --resource --model=Product
+
+step 6:
+update app/Models/Product.php
+
+step 7:
+update app/Http/Controllers/ProductController.php
+
+
+step 8:
+generate blade files. resources/views/products/...
+create.blade.php,
+edit.blade.php,
+index.blade.php,
+layout.blade.php,
+show.blade.php
