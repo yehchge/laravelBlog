@@ -19,20 +19,22 @@ Schema::create('posts', function (Blueprint $table) {
         });
 ```
 $ php artisan migrate
+$ php artisan make:factory MemberFactory
+$ php artisan make:seeder MembersTableSeeder
 $ php artisan make:seeder PostsTableSeeder
 $ php artisan make:seeder UsersTableSeeder
 $ php artisan db:seed
+$ php artisan make:model Members
 $ php artisan key:generate
 $ php artisan make:controller PostsController --resource
 $ php artisan 
 $ composer install
 $ php artisan migrate
 $ php artisan serve
-
 $ php artisan make:migration create_members_table
 $ php artisan make:migration create_datas_table
 $ php artisan make:migration create_notes_table
-
+$ php artisan migrate:refresh --seed
 
 
 http://127.0.0.1:8000/

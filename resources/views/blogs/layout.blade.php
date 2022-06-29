@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title><?=(isset($this->title)) ? $this->title : 'MVC2'; ?></title>
+    <title>MVC2</title>
     <link rel="stylesheet" href="{{ asset('css/default.css') }}" />
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -9,12 +9,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="{{ asset('js/custom.js') }}"></script>
     <script src="{{ asset('js/default.js') }}"></script>
-
-    @if (isset($this->js))
-        foreach ($this->js as $js) {
-            echo '<script type="text/javascript" src="'.URL.'views/'.$js.'"></script>';
-        }
-    @endif
 </head>
 <body>
 
