@@ -34,6 +34,8 @@ http://127.0.0.1:8000/contactUs
 http://127.0.0.1:8000/dicts
 http://127.0.0.1:8000/posts
 http://127.0.0.1:8000/tasks
+http://127.0.0.1:8000/articles
+
 
 
 Ref:
@@ -69,3 +71,36 @@ generate blade files. resources/views/tasks/...
 errors.blade.php,
 index.blade.php,
 layout.blade.php
+
+============================================
+
+Articles: (no auth)
+
+step 1:
+$ php artisan make:migration create_articles_table --create=articles
+
+step 2:
+update xxxx_xx_xx_xxxxxx_create_articles_table.php
+
+step 3:
+$ php artisan migrate
+
+step 4:
+update routes/web.php
+
+step 5:
+$ php artisan make:controller ArticleController --resource --model=Article
+
+step 6:
+update app/Models/Article.php
+
+step 7:
+update app/Http/Controllers/ArticleController.php
+
+step 8:
+generate blade files. resources/views/articles/...
+create.blade.php,
+edit.blade.php,
+index.blade.php,
+layout.blade.php,
+show.blade.php

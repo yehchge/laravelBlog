@@ -5,6 +5,7 @@ use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\DictController;
 use App\Http\Controllers\TaskController;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,3 +57,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource('dicts', DictController::class);
 Route::resource('tasks', TaskController::class);
+Route::resource('articles', ArticleController::class);
