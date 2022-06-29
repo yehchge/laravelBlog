@@ -32,9 +32,40 @@ $ php artisan serve
 http://127.0.0.1:8000/
 http://127.0.0.1:8000/contactUs
 http://127.0.0.1:8000/dicts
-
+http://127.0.0.1:8000/posts
+http://127.0.0.1:8000/tasks
 
 
 Ref:
 使用 Old Route:
 https://www.amitmerchant.com/use-Laravel7-style-controller-route-definitions-in-Laravel-8/
+
+
+Tasks:
+
+step 1:
+$ php artisan make:migration create_tasks_table --create=tasks
+
+step 2:
+update xxxx_xx_xx_xxxxxx_create_tasks_table.php
+
+step 3:
+$ php artisan migrate
+
+step 4:
+update routes/web.php
+
+step 5:
+$ php artisan make:controller TaskController --resource --model=Task
+
+step 6:
+update app/Models/Task.php
+
+step 7:
+update app/Http/Controllers/TaskController.php
+
+step 8:
+generate blade files. resources/views/tasks/...
+errors.blade.php,
+index.blade.php,
+layout.blade.php
