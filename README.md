@@ -54,13 +54,13 @@ $ php artisan make:migration create_notes_table
 $ php artisan migrate:refresh --seed
 ```
 
-[http://127.0.0.1:8000/](http://127.0.0.1:8000/)
-[http://127.0.0.1:8000/contactUs](http://127.0.0.1:8000/contactUs)
-[http://127.0.0.1:8000/dicts](http://127.0.0.1:8000/dicts)
-[http://127.0.0.1:8000/posts](http://127.0.0.1:8000/posts)
-[http://127.0.0.1:8000/tasks](http://127.0.0.1:8000/tasks)
-[http://127.0.0.1:8000/articles](http://127.0.0.1:8000/articles)
-[http://127.0.0.1:8000/blogs](http://127.0.0.1:8000/blogs)
+[http://127.0.0.1:8000/](http://127.0.0.1:8000/)  
+[http://127.0.0.1:8000/contactUs](http://127.0.0.1:8000/contactUs)  
+[http://127.0.0.1:8000/dicts](http://127.0.0.1:8000/dicts)  
+[http://127.0.0.1:8000/posts](http://127.0.0.1:8000/posts)  
+[http://127.0.0.1:8000/tasks](http://127.0.0.1:8000/tasks)  
+[http://127.0.0.1:8000/articles](http://127.0.0.1:8000/articles)  
+[http://127.0.0.1:8000/blogs](http://127.0.0.1:8000/blogs)  
 
 
 Ref:
