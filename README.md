@@ -1,8 +1,9 @@
-# Laravel Version: 9.52.7  
-# PHP Version: 8.2.6  
-# DB Name: Laravel10  
+# Laravel Version: 9.52.7
 
-This is My Laravel Study Code
+- PHP Version: 8.2.6  
+- DB Name: Laravel10  
+
+## This is My Laravel Study Code
 
 ## Install
 
