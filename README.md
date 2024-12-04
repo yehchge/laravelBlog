@@ -1,7 +1,7 @@
-# Laravel Version: 9.52.7
+# Laravel Version: 11.34.2
 
-- PHP Version: 8.2.6  
-- DB Name: Laravel10  
+- PHP Version: 8.3.14
+- DB Name: Laravel11  
 
 ## This is My Laravel Study Code
 
