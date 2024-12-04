@@ -223,3 +223,18 @@ edit.blade.php,
 index.blade.php,  
 layout.blade.php,  
 show.blade.php  
+
+- spatie/laravel-ignition 1.7.0 requires ext-curl
+```bash
+sudo apt-get install php8.4-curl
+```
+
+- phpunit/phpunit 9.6.21 requires ext-dom *
+```bash
+sudo apt install php8.4-xml
+```
+
+- Laravel Upgrade Version 9.x to 10.x, Ref:
+
+https://laracasts.com/discuss/channels/laravel/laravel-10-upgrade-problems
+
